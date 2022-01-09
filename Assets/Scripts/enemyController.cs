@@ -72,11 +72,14 @@ public class enemyController : MonoBehaviour
         }
     }
     public void Fix()
-        {
-            broken = false;
-            rigidbody2D.simulated = false;
-            animator.SetTrigger("Fixed");
-            EfectoHumo.Stop();
-        }
+    {
+        broken = false;
+        rigidbody2D.simulated = false;
+        animator.SetTrigger("Fixed");
+        EfectoHumo.Stop();
+        SceneController.NextLevel+=1;
+        
+    }
+
 
 }
