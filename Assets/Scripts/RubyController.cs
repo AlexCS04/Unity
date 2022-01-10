@@ -22,6 +22,13 @@ public class RubyController : MonoBehaviour
 
     public float Speed = 18.0f;
     Rigidbody2D rigidbody2d;
+
+    AudioSource audioSource;
+
+    public AudioClip shoot;
+
+    public AudioClip Daño;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +37,8 @@ public class RubyController : MonoBehaviour
         animator = GetComponent<Animator>();
         
         rigidbody2d= GetComponent<Rigidbody2D>();
+
+        audioSource= GetComponent<AudioSource>();
 
     }
 
@@ -75,6 +84,7 @@ public class RubyController : MonoBehaviour
         if (amount < 0)
         {
             animator.SetTrigger("Hit");
+            audioSource.PlayOneShot(Daño);
             if (isInvincible)
                 
                 return;
@@ -93,6 +103,12 @@ public class RubyController : MonoBehaviour
         projectile.Launch(lookDirection, 300);
 
         animator.SetTrigger("Launch");
+
+        audioSource.PlayOneShot(shoot);
         
+    }
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
     }
 }
