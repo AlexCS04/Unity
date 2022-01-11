@@ -293,3 +293,12 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 309.568374 seconds.
+  path: Assets/Prefabs/ruby.prefab
+  artifactKey: Guid(9e906f7f4219c7349b679b4d9369df81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ruby.prefab using Guid(9e906f7f4219c7349b679b4d9369df81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cbc82fdbbf2680276945db9dc11276d') in 0.085552 seconds 
+  Import took 0.091350 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
