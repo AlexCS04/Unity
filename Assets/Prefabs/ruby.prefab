@@ -103,7 +103,7 @@ MonoBehaviour:
   Herido: {fileID: 0}
   timeInvincible: 2
   projectilePrefab: {fileID: 22872109817548694, guid: 2b081a26a7daf9840985d730c1579748, type: 3}
-  Speed: 18
+  Speed: 12
   shoot: {fileID: 8300000, guid: b2edfd40873655249ba0e01a5cf705be, type: 3}
   "Da\xF1o": {fileID: 8300000, guid: 9b1bb1f450b7d444fa4a8019d13519a7, type: 3}
 --- !u!50 &5940648158146469426
