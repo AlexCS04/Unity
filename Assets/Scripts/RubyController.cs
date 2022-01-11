@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RubyController : MonoBehaviour
 {
@@ -77,6 +78,11 @@ public class RubyController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.C))
         {
             Launch();
+        }
+
+        if(currentHealth == 0)
+        {
+            SceneManager.LoadScene(11);
         }
     }
     public void ChangeHealth(int amount)
