@@ -84,11 +84,16 @@ public class RubyController : MonoBehaviour
         if (amount < 0)
         {
             animator.SetTrigger("Hit");
-            audioSource.PlayOneShot(Daño);
+            
             if (isInvincible)
+            {
                 
                 return;
-            
+            }
+            else
+            {
+                audioSource.PlayOneShot(Daño);
+            }
             isInvincible = true;
             invincibleTimer = timeInvincible;
         }
