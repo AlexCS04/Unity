@@ -35,7 +35,7 @@ public class SceneController : MonoBehaviour
         if(collisionGameObject.name == "ruby")
         {
             LoadScene();
-            NextLevel = 0;
+            
 
         }
     }
@@ -44,7 +44,8 @@ public class SceneController : MonoBehaviour
         if (LoadLevel)
         {
             SceneManager.LoadScene(LevelTLoad);
-            
+            NextLevel = 0;
+
         }
 
     }
